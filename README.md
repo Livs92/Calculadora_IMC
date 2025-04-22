@@ -1,56 +1,40 @@
-📱 Calculadora de IMC
+# 📱 Calculadora de IMC
 
-Este projeto é um APP Android nativo desenvolvido em Kotlin, que calcula o IMC (Índice de Massa Corporal) a partir do peso e altura informados pelo usuário! 📏
+Este projeto é um **aplicativo Android**, desenvolvido em **Kotlin**, que calcula o **IMC (Índice de Massa Corporal)** a partir do peso e da altura informados pelo usuário. O app exibe a classificação correspondente ao resultado (baixo peso, normal, sobrepeso, etc.).
 
-🚀 Tecnologias Utilizadas
-Activity 🎯
-Exibe os elementos de interface e gerencia as interações do usuário.
+---
 
+## 🚀 Tecnologias Utilizadas
 
-Intent 🔄
-Responsável pela navegação entre telas e passagem de dados.
+- **Kotlin** – Linguagem principal do desenvolvimento.
+- **Android Studio** – IDE para desenvolvimento do app.
 
+### Recursos da Interface:
 
-Snackbar ⚠️
-Exibe mensagens de alerta ou erro para validar as entradas do usuário.
+- **Activity** – Gerencia as telas e as interações do usuário.
+- **Intent** – Responsável pela navegação entre telas e pela passagem de dados.
+- **Snackbar** – Exibe mensagens de validação ou erro ao usuário.
+- **screenOrientation** – Define a orientação da tela (retrato/paisagem).
 
+---
 
-screenOrientation 🔃
-Define a orientação da tela (retratar/paisagem).
+## 🧩 Estrutura de Layout
 
+### ViewGroups:
+- **LinearLayout** – Organiza componentes em linha (horizontal ou vertical).
+- **ConstraintLayout** – Permite posicionar os elementos com mais flexibilidade, utilizando restrições.
 
-🧩 Estrutura de Layout
+### Views:
+- **ImageView** – Exibição de ícones e imagens.
+- **TextView** – Exibição de textos e resultados.
+- **TextInputLayout / TextInputEditText** – Campos para entrada de dados (peso e altura).
+- **Button** – Botão para acionar o cálculo do IMC.
 
-ViewGroups:
-LinearLayout ➡️⬇️
-Organiza os componentes em linha (horizontal ou vertical).
+---
 
+## 🔧 Lógica e Funcionalidades
 
-ConstraintLayout 🔗
-Permite criar layouts mais flexíveis, posicionando elementos com restrições.
+- **findViewById** – Realiza a vinculação entre os elementos da interface e o código Kotlin.
+- **Estruturas condicionais (`when`, `in.. ->`, `else`)** – Responsáveis por classificar o IMC em diferentes categorias (ex.: abaixo do peso, peso normal, sobrepeso).
 
-
-Views:
-ImageView 🖼️
-Exibe ícones ou imagens.
-
-
-TextView 📝
-Exibe textos e resultados do cálculo.
-
-
-TextInputLayout / TextInputEditText ✍️
-Campos para entrada de dados (peso e altura).
-
-
-Button 🖲️
-Aciona os eventos de cálculo com um clique.
-
-🔧 Métodos e Recursos
-findViewById 🔍
-Conecta os elementos da interface ao código Kotlin.
-
-
-Estruturas condicionais (when / in.. -> / else) 🧠
-Responsáveis por classificar o IMC (baixo peso, normal, sobrepeso, etc).
 
