@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".ResultActivity">
+
+    <!-- Cabeçalho com gradiente -->
+    <LinearLayout
+        android:id="@+id/vg_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/gradiente_bg"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_weight"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Calculadora IMC"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Confira o resultado abaixo"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="23.66"
+            android:textColor="@color/white"
+            android:textSize="64sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Nome -->
+    <TextView
+        android:id="@+id/tv_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome: Ana"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Classificação -->
+    <TextView
+        android:id="@+id/tv_classificacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Classificação: Normal"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Peso -->
+    <TextView
+        android:id="@+id/tv_peso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peso: 70.0 kg"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Altura -->
+    <TextView
+        android:id="@+id/tv_altura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Altura: 1.70 m"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Botão Voltar -->
+    <Button
+        android:id="@+id/btn_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/primaryColor" />
+</LinearLayout>
